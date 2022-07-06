@@ -12,9 +12,9 @@ unlet! b:current_syntax
 syn match kamiAttr '{[^}]*}' 
 syn region kamiHeader oneline start=/^\#\{1,6}/ end=/$/ contains=kamiAttr
 syn region kamiBold oneline start=/\*\{1,2}[^ ]/ end=/\*\{1,2}/ contains=kamiBI
-syn region kamiIB oneline start=/\*\{1,2}[^ ]/ end=/\*\{1,2}/
+syn region kamiIB oneline start=/\*\{1,2}[^ ]/ end=/\*\{1,2}/ contained
 syn region kamiItalic oneline start=/_\{1,2}[^ ]/ end=/_\{1,2}/ contains=kamiIB
-syn region kamiBI oneline start=/_\{1,2}[^ ]/ end=/_\{1,2}/
+syn region kamiBI oneline start=/_\{1,2}[^ ]/ end=/_\{1,2}/ contained
 syn region kamiStrike oneline start=/-\{1}[^ ]/ end=/-\{1}/
 syn region kamiUnderline oneline start=/-\{2}[^ ]/ end=/-\{2}/
 syn region kamiCode oneline start=/`\{1}/ end=/`\{1}/
